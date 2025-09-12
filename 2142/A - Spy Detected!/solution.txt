@@ -1,0 +1,1 @@
+fun main() {        val t=readLine()!!.toInt()     repeat(t) {        val n=readLine()!!.toInt()        val a=readLine()!!.split(" ").map { it.toInt() }         val common = if (a[0]==a[1]) a[0] else a[2]         for (i in a.indices) {            if (a[i] != common) {                println(i + 1)                  break            }        }    }}
