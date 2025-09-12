@@ -1,0 +1,1 @@
+fun main() {    val t=readLine()!!.toInt()    repeat(t) {        val k=readLine()!!.toInt()        var cnt=0        var num=0        while(cnt<k) {            num++            if (num%3 != 0 && num%10 != 3) {                cnt++            }        }        println(num)    }}
